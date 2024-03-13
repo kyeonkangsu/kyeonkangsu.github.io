@@ -9,8 +9,8 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: IDLE Blog
-subtitle: "게을러지기 위해 부지런한 개발자 :)"
+title:
+subtitle:
 email: deni5@naver.com
 name: KYOEN KANGSU
 description: >
@@ -26,7 +26,13 @@ logo: "/assets/logo_kangsu.png"
 # Build settings
 markdown: kramdown
 inter_post_navigation: true #긴 글 설정
-highlightjs_theme: "monokai-sublime" # 테마 설정
+#highlightjs_theme: "monokai-sublime" # 테마 설정
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+      style: monokai-sublime
 
 # Pagination Settings
 # https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
